@@ -1,0 +1,7 @@
+D:\C sharp\assm\assm\bin\Debug\assm.exe.config
+D:\C sharp\assm\assm\bin\Debug\assm.exe
+D:\C sharp\assm\assm\bin\Debug\assm.pdb
+D:\C sharp\assm\assm\obj\Debug\assm.csproj.AssemblyReference.cache
+D:\C sharp\assm\assm\obj\Debug\assm.csproj.CoreCompileInputs.cache
+D:\C sharp\assm\assm\obj\Debug\assm.exe
+D:\C sharp\assm\assm\obj\Debug\assm.pdb
