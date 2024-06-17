@@ -14,6 +14,11 @@ namespace assm
             string customerName = Console.ReadLine();
             int Watermasslastmonth = GetMeterReading("Enter last month's water meter readings: ");
             int Waterblockthismonth = GetMeterReading("Enter this month's water meter readings: ");
+            while ( Waterblockthismonth< Watermasslastmonth)
+            {
+                Console.WriteLine("Please re-enter.");
+                Waterblockthismonth = GetMeterReading("Enter this month's water meter readings: ");
+            }    
             int customertype = GetCustomertype();
 
             int numberOfPeople = 0;
@@ -21,7 +26,7 @@ namespace assm
             {
                 numberOfPeople = GetNumberOfPeople();
             }
-            int consumption = Waterblockthismonth - Watermasslastmonth;
+            int consumption = Waterblockthismonth - Watermasslastmonth;                  
             double amount = CalculateWaterBill(consumption, customertype, numberOfPeople);
             Console.WriteLine("Customer name: " + customerName);
             Console.WriteLine("Enter last month's water meter readings: " + Watermasslastmonth);
@@ -81,8 +86,6 @@ namespace assm
         static double CalculateWaterBill(int consumption, int customerType, int numberOfPeople)
         {
             double money = 0;
-
-
             switch (customerType)
             {
                 case 1:
